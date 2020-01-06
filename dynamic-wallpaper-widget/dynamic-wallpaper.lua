@@ -26,10 +26,11 @@ local gears = require('gears')
 -- Wallpaper  directory
 -- filesystem.get_configuration_dir() is `$HOME/.config/awesome`
 --
-local wall_dir = filesystem.get_configuration_dir() .. 'theme/wallpapers/'
+local wall_dir = filesystem.get_configuration_dir() .. 'wallpapers/'
 -- local wall_dir = os.getenv('HOME') .. 'Pictures/Wallpapers/'
 
 -- Wallpapers filename
+-- Make sure to have these in wall_dir directory
 wallpaper_Day = 'day-wallpaper.jpg'
 wallpaper_Noon = 'noon-wallpaper.jpg'
 wallpaper_Night = 'night-wallpaper.jpg'
@@ -43,7 +44,7 @@ wallpaper_Midnight = 'midnight-wallpaper.jpg'
 -- Most likely, there's no reason to change this
 local day_Time = 6
 local noon_Time = 12
-local night_Time = 17
+local night_Time = 18
 local mid_night_Time = 0
 
 
@@ -56,7 +57,7 @@ local mid_night_Time = 0
 -- Change its time event counter part `noon_Time`, to `11`
 day_Schedule = '06:30:00'
 noon_Schedule = '12:00:00'
-night_Schedule = '17:30:00'
+night_Schedule = '18:00:00'
 midnight_Schedule = '24:00:00'
 
 -- Do not use 00:00:00 as midnight schedule as it will result in negative seconds lol
