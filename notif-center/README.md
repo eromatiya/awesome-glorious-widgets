@@ -40,23 +40,31 @@ s.mywibox.widget = {
   },
 }
 ```
-+ For `Do not disturb` button to work, add this to your `rc.lua`
++ After that, it is recommended to add a `request::display` signal listener in your `rc.lua`:
++ Add the snippet below:
 
 ```lua
-naughty.connect_signal("request::display", function(n)
-  -- Don't Show/Destroy popup notifications if notification panel is visible
-  -- And if do not dont_disturb is on
-  if _G.panel_visible or _G.dont_disturb then
-    naughty.destroy_all_notifications()
-  end
-
-  -- You can add anything here
-  -- You can add the system sound effects snippet here
+-- request::display signal listener
+naughty.connect_signal('request::display', function(n)
+    naughty.layout.box {notification = n}
 end)
 ```
 
++ For `Do not disturb` button to work, add the snippet below to the `request::display` signal listener mentioned above:
+
+```lua
+-- Don't Show/Destroy popup notifications if notification panel is visible
+-- And if do not dont_disturb is on
+-- We will use `destroy_all_notifications()` instead of `suspend()` because this widget just generate the data from the naughty to generate some wiboxes. Suspending naughty will also suspend the notification-center.
+
+-- Don't display notification pop-ups when the panel is visible and dont disturb mode is enabled.
+if _G.panel_visible or _G.dont_disturb then
+  naughty.destroy_all_notifications()
+end
+```
+
 # Extras
-You can also add a system sound effects when there is a new notification by installing `canberra-gtk-play`. After that, add the snippet below inside the `connect_signal` snippet above.
+You can also add a system sound effects when there is a new notification by installing `canberra-gtk-play`. Again, after that, add the snippet below inside inside the `request::display` signal.
 
 ```lua
 -- Add sound effects if it's not do not disturb mode
@@ -69,5 +77,5 @@ end
 
 # Note:  
 + If you have a problem, try to solve it or just open an issue.
-+ Putting the widget folder to a different path other than `$HOME/.config/awesome` may cause some issues. It is because there is some hard-coded paths in some of the files. Tinkering it by yourself is suggested. ;)
++ Putting the widget folder to a different path other than `$HOME/.config/awesome` may cause some issues. It is because there is some hard-coded paths in some of the files. Tinkering it by yourself is recommended. ;)
 + Change the colors of notification panel widget in `$HOME/.config/awesome/notif-center/init.lua`

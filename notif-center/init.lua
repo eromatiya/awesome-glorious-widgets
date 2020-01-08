@@ -19,6 +19,8 @@ beautiful.bg_modal = '#252525'
 beautiful.bg_actions = '#353535'
 -- Notification panel background
 beautiful.panel_bg = '#0a0a0a'
+-- Rounded corner radius
+beautiful.modal_radius = dpi(9)
 
 -- Load panel rules, it will create panel for each screen
 require('notif-center.notif-panel-rules')
