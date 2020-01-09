@@ -58,7 +58,7 @@ end)
 + For `Do not disturb` button to work, add the snippet below to the `request::display` signal listener mentioned above:
 
 ```lua
--- We will use `destroy_all_notifications()` instead of `suspend()` because this widget just generate the data from the naughty to generate some wiboxes. Suspending naughty will also suspend the notification-center.
+-- We will use `destroy_all_notifications()` instead of `suspend()` because suspending naughty will also suspend the notification-center. It's a hackish way to hide the pop-ups, but hey, it's working.
 
 -- Don't display notification pop-ups when the panel is visible and dont disturb mode is enabled.
 if _G.panel_visible or _G.dont_disturb then
