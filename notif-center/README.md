@@ -1,12 +1,14 @@
 # Notification Center Widget
 
-# Store the notification in a panel
+## A notification center widget for Awesome Window Manager  
 
+| Screenshot|
+| --- |
+| ![Screenshot](https://github.com/ilovecookieee/awesome-glorious-widgets/blob/master/screenshots/notif-center.png) |
 
-| Notification center |
-| --- | --- |
-| Screenshot | ![Screenshot](https://github.com/ilovecookieee/awesome-glorious-widgets/blob/master/screenshots/notif-center.png) |
-| Demo | ![Screenshot](https://github.com/ilovecookieee/awesome-glorious-widgets/blob/master/screenshots/notif-center.gif) |
+| Demo |
+| --- |
+| ![GIF](https://github.com/ilovecookieee/awesome-glorious-widgets/blob/master/screenshots/notif-center.gif) |
 
 
 # Dependencies:
