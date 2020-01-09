@@ -4,11 +4,14 @@
 
 
 | Notification center |
-| --- |
-| ![Screenshot](https://github.com/ilovecookieee/awesome-glorious-widgets/blob/master/screenshots/notif-center.png) |
+| --- | --- |
+| Screenshot | ![Screenshot](https://github.com/ilovecookieee/awesome-glorious-widgets/blob/master/screenshots/notif-center.png) |
+| Demo | ![Screenshot](https://github.com/ilovecookieee/awesome-glorious-widgets/blob/master/screenshots/notif-center.gif) |
+
 
 # Dependencies:
 + Awesome Window Manager (git master branch)
++ canberra-gtk-play (optional)
 
 # Instructions:  
 + Clone the repo.
