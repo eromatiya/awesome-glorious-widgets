@@ -13,7 +13,7 @@
 
 # Dependencies:
 + Awesome Window Manager (git master branch)
-+ canberra-gtk-play (optional)
++ Libcanberra (optional)
 
 # Instructions:  
 + Clone the repo.
@@ -67,7 +67,7 @@ end
 ```
 
 # Extras
-You can also add a system sound effects when there is a new notification by installing `canberra-gtk-play`. Again, after that, add the snippet below inside inside the `request::display` signal.
+You can also add a system sound effects when there is a new notification by installing `libcanberra`. Again, after that, add the snippet below inside inside the `request::display` signal.
 
 ```lua
 -- Add sound effects if it's not do not disturb mode
