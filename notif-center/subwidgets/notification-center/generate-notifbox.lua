@@ -74,6 +74,11 @@ local current_time = function()
   return os.date("%H:%M:%S")
 end
 
+-- Get exact time of creation
+local exact_time = function()
+  return  os.date("%b %d, %I:%M %p")
+end
+
 -- Convert time to seconds
 local parse_to_seconds = function(time)
   -- Convert HH in HH:MM:SS
@@ -194,6 +199,9 @@ local notifbox_box = function(notif, icon, title, message, app, bgcolor)
 
   -- Get current time for `this` instance of box
   local time_of_pop = current_time()
+
+  -- Get the time and date
+  local exact_time_of_pop = exact_time()
   
   -- Notification time pop container
   local notifbox_timepop =  wibox.widget {
@@ -224,8 +232,9 @@ local notifbox_box = function(notif, icon, title, message, app, bgcolor)
 
       -- If greater that one hour
       elseif time_difference >= 3600 then
-        notifbox_timepop.text = time_of_pop
-
+        notifbox_timepop.text = exact_time_of_pop
+        return false
+        
       -- Use time of popup instead
       else
         local time_in_minutes = math.floor(time_difference / 60)
