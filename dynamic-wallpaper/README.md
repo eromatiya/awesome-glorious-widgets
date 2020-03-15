@@ -16,8 +16,10 @@ git clone --depth=1 https://github.com/manilarome/awesome-glorious-widgets ~/.co
 
 `require('awesome-glorious-widgets.dynamic-wallpaper')`  
 
-# Default wallpaper directory is set on:  
-`$HOME\.config\awesome\wallpapers\`  
+
+# Default wallpaper directory is in:  
+
+`$HOME/.config/awesome/awesome-glorious-widgets/dynamic-wallpaper/wallpapers/`  
 
 
 # Note:  
