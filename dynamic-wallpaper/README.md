@@ -1,16 +1,20 @@
-# A Dynamic Wallpaper Widget
+# A Dynamic Wallpaper Module
 
-# Change wallpaper based on time.
+## Change wallpaper based on time.
 
-# Instructions:  
-Clone the repo to your configuration
+[!workflow](https://github.com/manilarome/awesome-glorious-widgets/blob/master/dynamic-wallpaper/workflow.gif)
+
+## Instructions:  
+
++ Clone the repo to your configuration
+
 ```bash
 git clone --depth=1 https://github.com/manilarome/awesome-glorious-widgets ~/.config/awesome/awesome-glorious-widgets
 ```
 
-`require` it in your `rc.lua`.
++ `require` it in your `rc.lua`.
 
-`require('awesome-glorious-widgets.dynamic-wallpaper.dynamic-wallpaper')`  
+`require('awesome-glorious-widgets.dynamic-wallpaper')`  
 
 # Default wallpaper directory is set on:  
 `$HOME\.config\awesome\wallpapers\`  
