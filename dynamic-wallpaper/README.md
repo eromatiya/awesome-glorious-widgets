@@ -2,7 +2,7 @@
 
 ## Change wallpaper based on time.
 
-[!workflow](https://github.com/manilarome/awesome-glorious-widgets/blob/master/dynamic-wallpaper/workflow.gif)
+![workflow](https://github.com/manilarome/awesome-glorious-widgets/blob/master/dynamic-wallpaper/workflow.gif)
 
 ## Instructions:  
 
