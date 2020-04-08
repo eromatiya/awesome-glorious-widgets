@@ -18,9 +18,9 @@ Instructions:
 
 2. Change the execute time. Execute time is the time(in seconds) before executing the callback. Default is `0.50` seconds.
 
-```lua
-local execute_time = 0.50
-```
+	```lua
+	local execute_time = 0.50
+	```
 
 3. Change the callback for every hot-corners. You can leave them blank.
 
