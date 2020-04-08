@@ -26,15 +26,15 @@ local tl_callback = function()
 end
 
 local tr_callback = function()
-	naughty.notification({title = 'hot-corner', message='top left'})
+	naughty.notification({title = 'hot-corner', message='top right'})
 end
 
 local br_callback = function()
-	naughty.notification({title = 'hot-corner', message='top left'})
+	naughty.notification({title = 'hot-corner', message='bottom right'})
 end
 
 local bl_callback = function()
-	naughty.notification({title = 'hot-corner', message='top left'})
+	naughty.notification({title = 'hot-corner', message='bottom left'})
 end
 
 screen.connect_signal("request::desktop_decoration", function(s)
