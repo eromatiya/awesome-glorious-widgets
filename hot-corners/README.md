@@ -2,6 +2,8 @@
 
 Execute a command by moving your cursor to screen edges.
 
+![workflow](https://github.com/manilarome/awesome-glorious-widgets/blob/master/hot-corners/workflow.gif)
+
 Instructions:
 
 1. Create the hot-corners. Add it after your `wibar` or `wibox`
