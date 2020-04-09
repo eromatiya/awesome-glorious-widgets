@@ -17,8 +17,6 @@ local gears = require('gears')
 local naughty = require('naughty')
 local beautiful = require('beautiful')
 
-local dpi = require('beautiful').xresources.apply_dpi
-
 local execute_time = 0.50
 
 local tl_callback = function()
@@ -42,14 +40,14 @@ screen.connect_signal("request::desktop_decoration", function(s)
 	gears.timer.start_new(0.1, function()
 
 		s.corner_tl = wibox {
-			x = dpi(s.geometry.x),
-			y = dpi(s.geometry.y),
+			x = s.geometry.x,
+			y = s.geometry.y,
 			visible = true,
 			screen = s,
 			ontop = true,
 			opacity = 0.0,
-			height = dpi(1),
-			width = dpi(1),
+			height = 1,
+			width = 1,
 			type = 'utility'
 		}
 		local tl_timer = gears.timer {
@@ -81,14 +79,14 @@ screen.connect_signal("request::desktop_decoration", function(s)
 	    )
 
 		s.corner_tr = wibox {
-			x = dpi(s.geometry.x + (s.geometry.width - 1)),
-			y = dpi(s.geometry.y),
+			x = s.geometry.x + (s.geometry.width - 1),
+			y = s.geometry.y,
 			visible = true,
 			screen = s,
 			ontop = true,
 			opacity = 0.0,
-			height = dpi(1),
-			width = dpi(1),
+			height = 1,
+			width = 1,
 			type = 'utility'
 		}
 		local tr_timer = gears.timer {
@@ -120,14 +118,14 @@ screen.connect_signal("request::desktop_decoration", function(s)
 	    )
 
 		s.corner_br = wibox {
-			x = dpi(s.geometry.x + (s.geometry.width - 1)),
-			y = dpi(s.geometry.y + (s.geometry.height - 1)),
+			x = s.geometry.x + (s.geometry.width - 1),
+			y = s.geometry.y + (s.geometry.height - 1),
 			visible = true,
 			screen = s,
 			ontop = true,
 			opacity = 0.0,
-			height = dpi(1),
-			width = dpi(1),
+			height = 1,
+			width = 1,
 			type = 'utility'
 		}
 		local br_timer = gears.timer {
@@ -159,14 +157,14 @@ screen.connect_signal("request::desktop_decoration", function(s)
 	    )
 
 		s.corner_bl = wibox {
-			x = dpi(s.geometry.x),
-			y = dpi(s.geometry.y + (s.geometry.height - 1)),
+			x = s.geometry.x,
+			y = s.geometry.y + (s.geometry.height - 1),
 			visible = true,
 			screen = s,
 			ontop = true,
 			opacity = 0.0,
-			height = dpi(1),
-			width = dpi(1),
+			height = 1,
+			width = 1,
 			type = 'utility'
 		}
 		local bl_timer = gears.timer {
