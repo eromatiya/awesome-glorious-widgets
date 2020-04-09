@@ -1,6 +1,10 @@
 ## A Lockscreen Module with PAM Integration
 
-This is a lockscreen module with PAM integration. **The PAM integration was made possible by [RMTT](https://github.com/RMTT/)!**
+This is a lockscreen module with PAM integration. 
+
+**The PAM integration was made possible by [RMTT](https://github.com/RMTT/)!** 
+
+Lua-PAM's [Source code](https://github.com/RMTT/lua-pam)
 
 ![screenshot](lockscreen.png)
 
