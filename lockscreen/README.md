@@ -4,7 +4,7 @@ This is a lockscreen module with PAM integration.
 
 **The PAM integration was made possible by [RMTT](https://github.com/RMTT/)!** 
 
-Lua-PAM's [Source code](https://github.com/RMTT/lua-pam)
+Lua-PAM's [Source code](https://github.com/RMTT/lua-pam)! Consider giving him a :star:!
 
 ![screenshot](lockscreen.png)
 
@@ -38,6 +38,11 @@ If you found some bugs, please consider reporting it.
 
 ### More info
 
+- Features:
+	- PAM Integration
+	- Face Capture (Enabled by default)
+	- Dynamic Background (Enabled by default)
+
 - Optional Depends:
 	- `ffmpeg`
 	- a webcam
@@ -54,7 +59,7 @@ If you found some bugs, please consider reporting it.
 
 - Background modes
 	- `blur` method uses `imagemagick`'s `convert` to blur the background. 
-		- There's also a dynamic background functionality like the one with the `dynamic-wallpaper` module. It changes the blurred background image based on time. This is enabled by default. If disabled, it will use the default wallpaper. Configure it in `awesome/module/lockscreen.lua`.
+		- There's also a dynamic background functionality like the one with the `dynamic-wallpaper` module. It changes the blurred background image based on time. This is enabled by default. If disabled, it will use the default wallpaper. Configure it in `awesome-glorious-widgets/lockscreen/wallpapers/`.
 
 	- `root` uses the root background/wallpaper as the lockscreen's background image.
 	- `background` use the `beautiful.background` color as the background image. Use it with blur and transparency to make it more beautiful.
